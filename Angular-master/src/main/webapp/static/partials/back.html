@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Song's Car Renting System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+
+<style>
+    a:visited {
+    color:blue;
+    background-color: pink;
+    text-decoration: underline;
+    }
+    body {
+     background-color: lightblue;
+    }
+</style>
+
+
+
+<body>
+
+
+<div class="container">
+<form novalidate>
+
+<h1 style= "text-align:center;font-size:200%"><br/><br/><br/>
+Return Cars list<br/></br>
+</h1>
+
+<p style= "text-align:center;font-family:courier">
+Plate Number:<select ng-options="item.plateNumber for item in carsList" ng-model="selected"/><br/>
+<input type="submit" ng-click="back(selected)" value="return"/><br/>
+</p>
+
+
+
+<a href="http://localhost:8080/Angular-master/static/index.html#/rentCars">Back</a>
+
+
+
+
+</form>
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="w3-container w3-orange">
+  <h1>Car RENT and RETURN Service</h1>      
+  <p>Authorized by SHI Song</p>      
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+  <h2>China</h2>
+  <p>China is the hometown of SHI SONG.</p>
+  <p>It is one of the largest countries in the world.
+  Song designed this system for a <mark>IST</mark>.</p>
+</div>
+
+<div class="w3-third">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+  <p>SHI Song is studying in Paris now. She will finish her engineering master degree here. </p>
+</div>
+
+
+<div class="w3-third">
+  <h2>The world</h2>
+  <p>The car renting system's future is step into the whole world. Just joking, no one will find it.</p>
+  
+</div>
+
+</div>
+
+
+</body>
+</html>

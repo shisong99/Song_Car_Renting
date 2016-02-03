@@ -1,0 +1,107 @@
+<html lang="en-US">
+<head>
+	<title>拾颂的租车系统</title>
+	<meta charset="UTF-8">
+</head>
+
+<style>
+    a:visited {
+    color:blue;
+    background-color: pink;
+    text-decoration: underline;
+    }
+    body {
+     background-color: lightyellow;
+    }
+</style>
+
+<body>
+<div class="container">
+<form novalidate>
+
+
+<h1 style= "text-align:center;font-size:200%"><br/><br/><br/>
+Cars list<br/><br/>
+</h1>
+
+
+
+
+
+
+
+<div style="text-align:center">
+<img src="http://digi.dnkb.com.cn/dnkb/res/1/20090428/98451240928011546.jpg" usemap="#carcarmap" alt="Car architecture" width="500" height="285"></img>
+<map name="#carcarmap">
+  <area shape="circle" coords="82.8,182,12.5" alt="左下灯" href="http://baike.baidu.com/link?url=lwowNPRKVks0OE3WWH7gXe2HEVNC4eCktN_ek1izmbogk2JaEOpVQpZMhN3S-n15VakU4XgHdgyf49ahkku9iq">
+  <area shape="circle" coords="87.8,125.8,12.5" alt="左上灯" href="http://baike.baidu.com/link?url=lwowNPRKVks0OE3WWH7gXe2HEVNC4eCktN_ek1izmbogk2JaEOpVQpZMhN3S-n15VakU4XgHdgyf49ahkku9iq">
+  <area shape="rect" coords="220,120,295,140" alt="右上灯" href="http://baike.baidu.com/link?url=lwowNPRKVks0OE3WWH7gXe2HEVNC4eCktN_ek1izmbogk2JaEOpVQpZMhN3S-n15VakU4XgHdgyf49ahkku9iq">
+  <area shape="circle" coords="250.5,188,12.5" alt="右下灯" href="http://baike.baidu.com/link?url=lwowNPRKVks0OE3WWH7gXe2HEVNC4eCktN_ek1izmbogk2JaEOpVQpZMhN3S-n15VakU4XgHdgyf49ahkku9iq">
+  <area shape="circle" coords="313.5,187,30" alt="前轮胎" href="http://baike.baidu.com/view/86417.htm">
+  <area shape="rect" coords="406,125,421,180" alt="后轮胎" href="http://baike.baidu.com/view/86417.htm">
+  <area shape="rect" coords="176,96,324,44" alt="挡风玻璃" href=" http://baike.baidu.com/view/594849.htm">
+  <area shape="rect" coords="347,96,372,76" alt="后视镜" href=" http://baike.baidu.com/view/980387.htm"> 
+</map>
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<p style= "text-align:center;font-family:courier">
+
+plate Type:<select ng-options="item.plateType for item in carsList2" ng-model="selected"/><br/>
+<input type="submit" ng-click="rent(selected)" value="RENT"/><br/>
+
+plate Seats:<select ng-options="item.plateSeat for item in carsList2" ng-model="selected"/><br/>
+<input type="submit" ng-click="rent(selected)" value="RENT"/><br/>
+
+plate Number:<select ng-options="item.plateNumber for item in carsList2" ng-model="selected"/><br/>
+<input type="submit" ng-click="rent(selected)" value="RENT"/><br/>
+
+</p>
+
+<a href="http://localhost:8080/Angular-master/static/index.html#/rentCars">Back</a>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+<table style="width:100%;text-align:center;color:brown;" border=1px> 
+  <caption style="font-size:200%" >Automotive Profile</caption>
+  <tr>
+    <th>Type</th>
+    <th>Seat</th> 
+    <th>Number</th>
+  </tr>
+  <tr>
+    <td>Mercedes-Benz</td>
+    <td rowspan="3">4</td>		
+    <td>22BB33</td>
+  </tr>
+  <tr>
+   <td>Bayerische Motoren Werke AG</td>	
+    <td>33CC44</td>
+  </tr>
+  <tr>
+    <td>BUICK</td>	
+    <td>55EE66</td>
+  </tr>
+  <tr>
+  	<td rowspan="2">Citroen</td>
+  	<td>2</td>
+  	<td>11AA22</td>
+  </tr>
+  <tr>
+  	<td>6</td>
+  	<td>44DD55</td>
+  </tr>
+</table>
+
+
+
+
+</form>
+</div>
+</body>
+
